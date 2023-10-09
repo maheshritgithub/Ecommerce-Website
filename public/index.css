@@ -1,0 +1,251 @@
+ * {
+     padding: 0;
+     margin: 0;
+ }
+
+
+
+ .parent-container {
+     width: 98%;
+     padding-left: 1%;
+     padding-right: 1%;
+     position: relative;
+ }
+
+ .header-container {
+     width: 100%;
+ }
+
+ .mainDiv {
+     position: relative;
+ }
+
+
+ /* Footer Container Styling */
+
+ .footer-container {
+     display: grid;
+     grid-template-rows: auto;
+     grid-template-columns: auto auto;
+     place-items: center;
+     width: 100%;
+     background-color: cyan;
+     border-radius: 4px;
+     height: 25vh;
+     margin-top: 10px;
+     float: left;
+     clear: both;
+ }
+
+ .Iconimages {
+     height: 50px;
+     width: 50px;
+ }
+
+ .iconDiv {
+     display: inline-flex;
+     gap: 30px;
+ }
+
+ .iconDiv img:hover {
+     transform: scale(1.4);
+     transition: transform 0.5s ease-in-out 0.2s;
+ }
+
+ .footer-contact {
+     display: flex;
+     flex-direction: column;
+     font-size: medium;
+     font-family: 'Lucida Sans';
+     font-weight: normal;
+ }
+
+ .Content-Container {
+     width: 100%;
+     padding-left: 7%;
+     padding-top: 20px;
+
+     overflow: hidden;
+
+     margin-top: 10px;
+     margin-bottom: 10px;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 30px;
+     background-color: white;
+     border-radius: 20px;
+ }
+
+ /* for add to cart items  */
+ .Content-Container1 {
+     width: 100%;
+     padding-left: 7%;
+     padding-top: 20px;
+
+     overflow: hidden;
+
+     margin-top: 10px;
+     margin-bottom: 10px;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 30px;
+     background-color: white;
+     border-radius: 20px;
+ }
+
+ img:hover {
+     transform: scale(1.2);
+     transition: transform 0.3s ease-in-out 0.1s;
+ }
+
+ .buttoncontainer {
+
+
+     position: absolute;
+     top: 230px;
+ }
+
+ .SearchContainer {
+
+     margin-top: 10px;
+
+ }
+
+
+ @media(max-width:1350px) {
+
+     .Content-Container {
+
+         grid-template-columns: repeat(3, 1fr);
+
+     }
+
+     .Content-Container1 {
+
+         grid-template-columns: repeat(3, 1fr);
+
+     }
+
+
+ }
+
+ @media(max-width:1050px) {
+
+     .Content-Container {
+
+         grid-template-columns: repeat(2, 1fr);
+
+     }
+
+     .Content-Container1 {
+
+         grid-template-columns: repeat(2, 1fr);
+
+     }
+
+
+ }
+
+ @media(max-width:650px) {
+
+     .Content-Container {
+
+         grid-template-columns: repeat(1, 1fr);
+         padding-left: 10%;
+
+     }
+
+     .Content-Container1 {
+
+         grid-template-columns: repeat(1, 1fr);
+         padding-left: 10%;
+
+     }
+
+
+ }
+
+ /* for add to cart button  */
+
+ .addCartButton {
+     position: absolute;
+     bottom: 10px;
+     left: 140px;
+ }
+
+ .addCartButton:hover {
+     transform: scale(1.2);
+     transition: transform 0.3s ease-in-out;
+ }
+
+ .Buttontextalign {
+     padding: 10px;
+     border-radius: 10px;
+     font-size: medium;
+     font-weight: bold;
+     font-style: normal;
+     color: white;
+     background-color: red;
+ }
+
+ h1 {
+     font-size: 36px;
+     font-weight: bold;
+     color: #333;
+     text-align: center;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+
+ }
+
+ @media (min-width: 500px) {
+     .listStyle {
+         list-style: none;
+         font-size: 17px;
+         font-family: Arial, Helvetica, sans-serif;
+         color: black;
+         display: inline-flex;
+         gap: 100px;
+     }
+
+     .navigationContainer {
+         /*  code to move the header navigation */
+         position: absolute;
+         right: 10%;
+         top: 80%;
+     }
+ }
+
+ @media (max-width: 500px) {
+     .footer-container {
+         grid-template-columns: auto;
+     }
+
+     .listStyle {
+         list-style: none;
+         font-size: 10px;
+         font-family: Arial, Helvetica, sans-serif;
+         color: black;
+         display: inline-flex;
+         gap: 10px;
+     }
+
+     p {
+         font-size: 10px;
+         /* header content font style */
+     }
+
+     h1 {
+         font-size: 12px;
+     }
+
+     .navigationContainer ul li {
+         font-size: 15px;
+     }
+
+     .navigationContainer {
+         position: absolute;
+         display: inline-flex;
+         left: 10px;
+         top: 85%;
+     }
